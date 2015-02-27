@@ -65,11 +65,14 @@ var book4 = {
 
 function matchTwoBooks(firstBook, secondBook) {
 	if (firstBook.pageNumber > secondBook.pageNumber) {
-			console.log(firstBook.title, "has more pages than", someAnotherBook.title);
+			return firstBook.title + "has more pages than" + someAnotherBook.title;
+			//console.log(firstBook.title, "has more pages than", someAnotherBook.title);
 		} else if (firstBook.pageNumber < secondBook.pageNumber) {
-			console.log(secondBook.title, "has more pages than", firstBook.title);
+			return secondBook.title + "has more pages than" + firstBook.title;
+			//console.log(secondBook.title, "has more pages than", firstBook.title);
 		} else {
-			console.log("Number of pages in", firstBook.title, "and", secondBook.title, "is equal");
+			return "Number of pages in" + firstBook.title + "and" + secondBook.title + "is equal";
+			//console.log("Number of pages in", firstBook.title, "and", secondBook.title, "is equal");
 		}
 };
 
@@ -85,6 +88,6 @@ book1.descriptInner();
 book1.descriptOuter(book2);
 book1.matchInner(book2);
 book1.matchOuter(book3, book4);
-matchTwoBooks(book1, book3);
-matchTwoBooks(book4, book3);
+console.log(matchTwoBooks(book1, book3));
+console.log(matchTwoBooks(book4, book3));
 console.log("Does the book's title consist 'the' word? -", findWordInTitle(book1, "the"));
