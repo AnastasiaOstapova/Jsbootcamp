@@ -1,0 +1,93 @@
+#storeTitle {
+	text-align: center;
+	border: 7px outset #008F6B;
+	color: #00aca0;
+}
+
+#description {
+	text-align: center;
+	color: #00aca0;
+}
+
+p {
+	text-align: justify;
+}
+
+#imgMap {
+	text-align: center;
+}
+
+#imgMap > img {
+	width: 95%;
+}
+
+#aboutUs {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+.imgBlock > img {
+	width: 150px;
+}
+
+#bookList {
+	list-style-type: none;
+}
+
+.authorName {
+	font-family: Papyrus,fantasy;
+}
+
+.bookItemBlock {
+	font-size: 23px;
+}
+
+.imgBlock, .bookItemBlock {
+	display: inline-block;
+}
+
+.bookItemBlock {
+	vertical-align: top;
+}
+
+.bookItemBlock:hover {
+	font-size: 26px;
+}
+
+a:visited, a:active, a:hover, a:link { 
+	text-decoration: none; 
+	color: black;
+} 
+
+.bookName {
+ 	font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif, bold;
+ 	font-weight: bold;
+ 	color: #ff6f00;
+ }
+
+body {
+    background-image: url("../img/wp2.jpg");
+    background-repeat: repeat;
+}
+
+#mainBlock {
+	background-color: #FFEBEB;
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	vertical-align: middle; 
+}
+
+.imgBlockDetail > img {
+	width: 250px;
+}
+
+.imgBlockDetail {
+	padding: 30px;
+	float: left;
+}
+
+.bookItemBlockDetail {
+	padding: 30px;
+}
