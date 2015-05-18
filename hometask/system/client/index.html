@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<header>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</header>
+	<body ng-app="sandbox">
+
+
+
+		<div class="container">
+			<div class="blog-header">
+				<h1 class="blog-title">Sandbox</h1>
+				<p class="lead blog-description">A good place to test the code</p>
+			</div>
+			<div class="row" ng-controller="RowController">
+				<div class="col-sm-8 blog-main">
+					<input ng-model="message" /><br>
+					{{message}}
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<div id="div1"></div>
+
+
+		<script src="vnd/jquery/dist/jquery.min.js"></script>
+
+		<script src="../server/main.js"></script>
+		<script src="../data/posts"></script>
+		<script src="vnd/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script src="vnd/angular/angular.js"></script>
+		<script src="../js/main.js"></script>
+
+	</body>
+</html>

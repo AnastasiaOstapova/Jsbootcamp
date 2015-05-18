@@ -1,0 +1,32 @@
+var comments = [
+    {
+        "id": 1,
+        "post_id": 1,
+        "content": "first comment for the first post",
+        "user_id":
+    },
+    {
+        "id": 2,
+        "post_id": 1,
+        "content": "second comment for the first post",
+        "user_id":
+    },
+    {
+        "id": 3,
+        "post_id": 2,
+        "content": "first comment for the second post",
+        "user_id":
+    },
+    {
+        "id": 4,
+        "post_id": 3,
+        "content": "first comment for the third post",
+        "user_id":
+    },
+    {
+        "id": 5,
+        "post_id": 3,
+        "content": "second comment for the third post",
+        "user_id":
+    }
+]
