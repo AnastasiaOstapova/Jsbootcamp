@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/server_part/node_modules/grunt-contrib-jasmine/node_modules/grunt-lib-phantomjs/node_modules/phantomjs/node_modules/request/node_modules/tough-cookie/test/cookie_jar_test.js" charset="UTF-8" />
-  </component>
-</project>
