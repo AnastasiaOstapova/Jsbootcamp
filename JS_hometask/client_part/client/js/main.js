@@ -1,4 +1,4 @@
-var module = angular.module("bookstore", []);
+var module = angular.module("bookstore", ['ngRoute']);
 
 //module.controller("RowController", function($scope) {
 //	$scope.message = "Hi there";
@@ -11,23 +11,17 @@ var module = angular.module("bookstore", []);
 //	});
 //});
 
-function cutDescription(text, border) {
-    var endOfWord = " .,?!";
-    var index = 0;
-    var state = false;
-    while (state == false) {
-        for (var i = 0; i < text.length; i++) {
-            if (endOfWord.indexOf(text[i]) != -1 && i < border) {
-                console.log("end of the word");
-                state = true;
-                index = i - 1;
-            }
-        }
-    }
-    return text.substring(0, index);
-};
-
-
-
-
-
+module.config(function ($routeProvider) {
+    $routeProvider
+        .when('/', {
+            controller: "PostsController",
+            templateUrl: "views/book-catalog.html"
+        })
+        .when('/posts/:id', {
+            controller: "PostDetailsController",
+            templateUrl: "views/book-details.html"
+        })
+        .otherwise({
+            redirectTo: "/"
+        });
+});

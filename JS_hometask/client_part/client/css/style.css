@@ -1,5 +1,9 @@
+a > img {
+    width: 150px;
+}
+
 img {
-    width: 200px;
+    width: 70px;
 }
 
 ul.book-list > li {
