@@ -1,8 +1,9 @@
 var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae fringilla ligula, mattis bibendum arcu.";
-var endOfWord = " .,?!";
-var index = 0;
+
 
 function cutText(text, border) {
+	var endOfWord = " .,?!";
+	var index = 0;
 	var state = false;
 	while (state == false) {
 		for (var i = 0; i < text.length; i++) {
@@ -17,3 +18,5 @@ function cutText(text, border) {
 };
 
 console.log(cutText(text, 20));
+
+
